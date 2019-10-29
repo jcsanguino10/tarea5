@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Tarea 5</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+    <nav class="navbar navbar-dark bg-info mb-4">
+        <h1 class="navbar-brand">Producción de café en Colombia en el 2018</h1>
+    </nav>
+    <div class="container">
+        <h1 class="font-weight-bold">Huila queda de segundo en la producción total de cafe en el 2018,
+            pero se lleva el municipio TOP 1 en producción.
+        </h1> 
+        <br>
+        <h5 class="my-2">Aunque Huila ocupa el segundo puesto frente a Antioquia en la producción de cafe, posee los municipios con
+            mejor producción a nivel nacional y con una menor cantidad de municipios frente a Antioquia</h5>
+    </div>
+    <div class="container col-10 px-0 py-0 mt-5">
+        <div class='tableauPlaceholder' id='viz1572367003246' style='position: relative'><noscript><a href='#'><img
+                        alt=' '
+                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;ProducciondecafeenColombiaenel2018&#47;Hoja2&#47;1_rss.png'
+                        style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='ProducciondecafeenColombiaenel2018&#47;Hoja2' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image'
+                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;ProducciondecafeenColombiaenel2018&#47;Hoja2&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' /></object></div>
+        <script
+            type='text/javascript'>                    var divElement = document.getElementById('viz1572367003246'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        <p class="font-italic">By Juan Camilo Sanguino Perez</p>
+    </div>
+    <div class="container my-5 col-8">
+        <h2 class="font-weight-bold">What</h2>
+        <p>
+            Los usuarios finales son el publico en general y aquellos interasado en la producción de café en Colombia. <br>
+            El dataset utilizado cuenta con 2 atributos categoricos (departamento y municipio) y 1 atributo ordenado > cuantitativo > secuencial. <br>
+            También vale la pena resaltar que se realiza un filtro del dataset original usando el atributo ordenado > cuantitativo > secuencial del periodo. <br>
+            El dataset es estatico ya que recoge datos de un periodo pasado. <br>
+        </p>
+    </div>
+    <div class="container my-5 col-8">
+        <h2 class="font-weight-bold">Why</h2>
+        <h5> Tareas Primarias: </h5>
+        <ol>
+            <li>Resumir (Query-> Summarize) la distribución (Attributes->One->Distribution) de la producción de cafe en Colombia.</li>
+        </ol>
+        <h5> Tareas Secundarias: </h5>
+        <ol>
+            <li>Identificar (Query-> Identify) los departamentos con mayor produccion de cafe en Colombia (Attributes->One->Extremes) </li>
+            <li>Identificar (Query-> Identify) los municipios con mayor produccion de cafe en Colombia (Attributes->One->Extremes) dado un departamento </li>
+            <li>Comparar (Query-> Compare) los municipios con mayor produccion de cafe en Colombia (Attributes->One->Extremes) dado un departamento o dos </li>
+        </ol>
+    </div>
+    <div class="container my-5 col-8">
+        <h2 class="font-weight-bold">How</h2>
+        <p>
+            <h6>Marcas</h6>
+            <p>Area: Representa la producción total de café de un municipio en toneladas</p>
+            <h6>Canales</h6>
+            <p>Escala express para representar cantidad de estudiantes. (Eje X)</p>
+            <p>Escala separate & align para representar la nota obtenida en precálculo y si fue inscritos, retiros o
+                terminaron el curso. (Eje Y)</p>
+            <h6>Encode</h6>
+            <p>Color hue: sirve para diferenciar entre los diferentes departamentos </p>
+            <h6>Manipulate</h6>
+            <p>En cuanto al manipulate hay un Select sobre cada area para obtener la información detallada.</p>
+            <h6>Reduce</h6>
+            <p>En cuanto al reduce hay un filter según el departamento y adicionalmente un filtro por el periodo (el cual es 2018 siempre)</p>
+        </p>
+    </div>
+    <!-- <div class="container my-5 col-8">
+        <h3 class="font-weight-bold">Conclusiones</h3>
+        <p>
+            En la mayor parte de america se han presentado delitos por casos de colombianos donde los que
+            mas resaltan son los delitos por narcotrafico y por robo/urto siendo Estados unidos y Ecuador
+            los mas afectados. <br>
+            Por otra parte paises como España presentan una alta tasa de delitos, pero la mayoria de ellos
+            son desconocidos.
+        </p>
+    </div> -->
+    <div class="container-fluid navbar-dark bg-info py-2">
+        <div class="row justify-content-end px-4">
+            <h5 class="text-light">29/10/2019</h5>
+        </div>
+    </div>
+</body>
+
+</html>
